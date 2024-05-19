@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ****** Use Functions *******
+        function checkage(age){
+            if (age >= 18){
+                return true;
+            }else {
+                return confirm('Do you have permission from your parents?');
+            }
+        }
+        let age = prompt("What is your age?",18);
+        if (checkage(age)){
+            alert ("Access granted.");
+        }else{
+            alert("Access denied");
+        }
+        // ******************************************
+        function ask (question,yes,no){
+            if (confirm(question))yes()
+            else no();
+        }
+        function showOk(){
+            alert("You agreed.");
+        }
+        function showCancel(){
+            alert("You canceled the execution.");
+        }
+        ask("Do you agree?",showOk,showCancel);
+    </script>
+</body>
+</html>

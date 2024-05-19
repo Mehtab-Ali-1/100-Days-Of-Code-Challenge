@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        // ********** DAY 57 *********
+        let age = prompt(`age`,23);
+        let message = (age < 3) ? `Hi Baby!`:
+        (age < 18) ? `Hello!`:
+        (age < 60) ? `Greetings!`:
+        `What an unsual age`;
+        alert(message);
+        // same this in if else 
+        let age1 = prompt(`what is your age`,25);
+        if (age < 3){
+            message = "Hi baby!";
+        }else if (age < 18){
+            message = "Hello!";
+        }else if(age < 100){
+            message = "Greetings!";
+        }else{
+            message = "What an unsual age";
+        }
+        // Conditional Operator
+        let company = prompt(`Which company created JavaScript?`);
+        (company == "netscape") ? alert("Right") : alert("Wrong");
+    </script>
+</body>
+</html>

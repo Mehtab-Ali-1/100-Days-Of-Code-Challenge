@@ -1,0 +1,12 @@
+// DAY 46
+// Q136
+for (var i = 1; i <= 5; i++) {
+    console.log("Iteration ".concat(i, ", i value:, i"));
+}
+// Q137
+try {
+    throw new Error("Something went wrong");
+}
+catch (error) {
+    console.log(error.message);
+}
